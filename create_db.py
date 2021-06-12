@@ -105,4 +105,5 @@ def main():
 		a={"Rut": y[0],"Nombre": y[1][0].upper()+y[1][1:], "Apellido": y[2][0].upper()+y[2][1:]}
 		usu.insert_one(a)
 		print("Agregado con exito! :) ")
+	client.close()
 main()
