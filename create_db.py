@@ -69,7 +69,7 @@ def desplegar_bases(lista):
 		print("{}.{}".format(i+1,lista[i]),end=" ")
 	print()
 def main():
-	client = MongoClient("localhost") #iniciar mongo
+	client = MongoClient('localhost',27017) #iniciar mongo
 	respuesta = que_Hacer()
 	if respuesta=="1":
 		nombreDB=input("¿Cuál será el nombre de la base de datos?: ")
